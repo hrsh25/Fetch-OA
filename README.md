@@ -25,8 +25,8 @@ Before you begin, ensure you have the following installed:
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/hrshvora/fetch-take-home.git
-    cd yourrepository
+    git clone https://github.com/hrshvora/Fetch-OA.git
+    cd Fetch-OA
     ```
 
 2. **Build and Run with Docker Compose**
@@ -35,7 +35,7 @@ Before you begin, ensure you have the following installed:
     docker-compose up --build
     ```
 
-    This command builds the Docker image and starts the container(s) as defined in your `docker-compose.yml`. The `--build` flag ensures the image is rebuilt if necessary.
+This command builds the Docker image and starts the container(s) as defined in the `docker-compose.yml`. The `--build` flag ensures the image is rebuilt if necessary.
 
 ### Usage
 
@@ -72,11 +72,11 @@ curl -X 'GET' \
   -H 'accept: application/json'
 ```
 
-Replace `{id}` with the actual ID returned when processing a receipt.
+Replace `{id}` with the ID returned by the POST request when processing a receipt.
 
 ### API Documentation
 
-Access the auto-generated Swagger UI documentation at `http://localhost/docs`. This page provides detailed information about the API endpoints, including the expected request formats and available responses.
+Access the auto-generated Swagger UI documentation at `http://localhost/docs`. This page provides detailed information about the API endpoints, including the expected request formats and available responses. You can also try the APIs here.
 
 ### Running Tests
 
